@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letters 💌</title>
+    <link rel="stylesheet" href="../css/page6.css">
+    <script src="../js/page6.js" defer></script>
+</head>
+<body>
+
+    <!-- 🌸 Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="page2.html">📖 Photobook</a></li>
+            <li><a href="page3.html">💡 Quiz</a></li>
+            <li><a href="page4.html">⏳ Our Days Together</a></li>
+            <li><a href="page5.html">🎵 Songs</a></li>
+            <li><a href="page6.html">💌 Love Letter</a></li>  
+        </ul>
+    </nav>
+
+    <!-- 📅 Upcoming Letters -->
+    <div class="section-box">
+        <h2>📅 Upcoming Letters</h2>
+        <p>2025-02-14</p>
+        <p>2025-08-09</p>
+    </div>
+
+    <!-- 💌 Letters Through Time -->
+    <div class="section-box">
+        <h2>💌 Letters Through Time</h2>
+        <div class="letter-box">
+            <!-- Valentine's Letter -->
+            <div class="letter-card click-reveal locked" id="valentineBox" data-target="valentineLetter">
+                💕 Valentine's Day Letter
+                <p id="valentineUnlock">Unlocks in: 7 Days</p>
+            </div>
+
+            <!-- Birthday Surprise -->
+            <div class="letter-card click-reveal locked" id="birthdayBox" data-target="birthdayLetter">
+                🎂 Birthday Surprise
+                <p id="birthdayUnlock">Unlocks in: 183 Days</p>
+            </div>
+
+            <!-- Surprise Letter -->
+            <div class="letter-card click-reveal" id="surpriseBox" data-target="surpriseLetter">
+                🎁 Surprise Letter
+                <p>🎀 Click to Reveal 🎀</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📜 Hidden Letters Content -->
+    <div id="valentineLetter" class="hidden reveal-message">💌 “On this special day of love, I want you to know just how deeply I cherish you. You are my favorite part of every day. Happy Valentine’s Day, Artie. 💖✨” 💖</div>
+    <div id="birthdayLetter" class="hidden reveal-message">🎉 “A year older, a year wiser, and another beautiful milestone in our journey together. On this special day, I want to remind you how much love and journey you bring into my life. Happy Birthday, Artie! 🎉💕” 🎊</div>
+    <div id="surpriseLetter" class="hidden reveal-message">✨ Life is full of unexpected surprises, but my favorite one has been you. Every day, I discover new reasons to love you even more 💌🌟 ✨</div>
+
+    <!-- 🔙 Go Back Button -->
+    <a href="../index.html" id="goBackButton">⬅ Go Back</a>
+
+</body>
+</html>

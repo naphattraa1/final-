@@ -1,0 +1,224 @@
+/* 🎀 Page Background */
+body {
+    background: #FFD9E6;
+    font-family: 'Dancing Script';
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* 📅 Section Box Styling */
+.section-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+/* ✨ Letter Box Styling */
+.letter-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* 💌 Letter Card */
+.letter-card {
+    background: #FFE4E1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.letter-card:hover {
+    background: #FFC0CB;
+    transform: scale(1.05);
+}
+
+/* 📜 Hidden Letters */
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 📜 Auto-Pop Up Letters */
+.auto-popup {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+/* 💕 Go Back Button */
+#goBackButton {
+    background: linear-gradient(to right, #ff6f61, #ffa07a);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+#goBackButton:hover {
+    background: linear-gradient(to right, #ffa07a, #ff6f61);
+    transform: scale(1.05);
+}
+/* 🌸 Navigation Bar */
+.navbar {
+    width: 100%;
+    background: rgba(255, 204, 221, 0.9); /* Soft pastel pink */
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    z-index: 1000;
+}
+
+/* 🌸 Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5B4636;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff6699;
+    color: white;
+}
+/* 🎀 Page Background */
+body {
+    background: #FFD9E6;
+    font-family: 'Dancing Script';
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* 📅 Section Box Styling */
+.section-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+/* 💌 Letter Box Styling */
+.letter-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* 📜 Letter Cards */
+.letter-card {
+    background: #FFE4E1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* 🔒 Locked Letters (Greyed Out) */
+.letter-card.locked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* 📜 Hidden Letters */
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 📜 Auto-Pop Up Letters */
+.auto-popup {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+/* 💌 Reveal Animation */
+.reveal-message {
+    background: #FFF5F8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* 🎀 Make it appear smoothly */
+.reveal-message.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* 💕 Go Back Button */
+#goBackButton {
+    background: linear-gradient(to right, #ff6f61, #ffa07a);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+#goBackButton:hover {
+    background: linear-gradient(to right, #ffa07a, #ff6f61);
+    transform: scale(1.05);
+}
+.locked {
+    opacity: 0.5;
+    pointer-events: none; /* Prevent clicking */
+}

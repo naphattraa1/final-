@@ -1,0 +1,164 @@
+/* 🌸 General Page Styling */
+body {
+    background: #FDECEF;
+    font-family: 'Dancing Script';
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📖 Navigation Bar */
+.navbar {
+    width: 100%;
+    background: rgba(255, 204, 221, 0.9); /* Soft pastel pink */
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5B4636;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff6699;
+    color: white;
+}
+
+/* 📖 Photobook Container */
+.photobook-container {
+    position: relative;
+    max-width: 600px;
+    height: 700px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 🎞 Flipbook Styling */
+#flipbook {
+    width: 450px;
+    height: 550px;
+    position: relative;
+    background: #FEF5F9;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🎞 Flipbook Pages */
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 🌟 Cover Page */
+.page.cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📖 Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    transform: scale(1.05);
+}
+
+/* 🏹 Adjusted Navigation Button Placement */
+.nav-button.left {
+    left: -100px; /* Pushes button further left */
+}
+
+.nav-button.right {
+    right: -100px; /* Pushes button further right */
+}
+
+/* Hide buttons when needed */
+.hidden {
+    display: none !important;
+}
+
+/* ⬅ Back Button - FIXED */
+.back-button-container {
+    display: flex;
+    justify-content: center; /* Ensures button is horizontally centered */
+    align-items: center;
+    margin-top: 40px; /* Adds space below flipbook */
+}
+
+.back-button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    transform: scale(1.05); /* Soft pop effect */
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When Yoyo Loves Artie 💖</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- 🌸 Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="pages/page2.html">📖 Photobook</a></li>
+            <li><a href="pages/page3.html">💡 Quiz</a></li>
+            <li><a href="pages/page4.html">⏳ Our Days Together</a></li>
+            <li><a href="pages/page5.html">🎵 Songs</a></li>
+            <li><a href="pages/page6.html">💌 Love Letter</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🌸 Decorative Background & Falling Petals -->
+    <div class="decorative-bg">
+        <div class="falling-petals"></div>
+    </div>
+
+    <div class="container">
+        <!-- 💕 Header Section -->
+        <div class="section header">
+            <h1>When Yoyo Loves Artie 💕</h1>
+            <p class="handwritten">"A journey and forever journey" 💖</p>
+        </div>
+
+        <!-- 📖 Digital Book Section -->
+        <div class="section book-preview">
+            <h2>Digital Book 📸</h2>
+            <div class="image-frame">
+                <img src="../images/1.png" alt="Our Memory" class="image">
+            </div>
+            <p>Every moment with you is special and beautiful.[Valentine's Edition]</p>
+            <a href="pages/page2.html" class="button">See More 👸🏻🫅🏻 →</a>
+        </div>
+
+        <!-- 🎀 Ribbon Section Divider -->
+        <div class="ribbon"></div>
+
+        <!-- 💌 Our Story Section -->
+        <div class="section love-story">
+            <h2> Love Story 💌</h2>
+            <p>Every page in our book is filled with love and adventure...</p>
+        </div>
+
+        <!-- 📸 Scrapbook Taped Photos -->
+        <div class="photo-album">
+            <div class="photo-frame">
+                <img src="../images/Red Pink Simple Minimalistic Hearts Valentine's Day Greeting Instagram Post.zip - 1.png" class="scrapbook-photo">
+                <div class="tape"></div>
+            </div>
+            <div class="photo-frame">
+                <img src="../images/Red Pink Simple Minimalistic Hearts Valentine's Day Greeting Instagram Post.zip - 2.png" class="scrapbook-photo">
+                <div class="tape"></div>
+            </div>
+            <div class="photo-frame">
+                <img src="../images/Red Pink Simple Minimalistic Hearts Valentine's Day Greeting Instagram Post.zip - 3.png" class="scrapbook-photo">
+                <div class="tape"></div>
+            </div>
+        </div>
+
+        <!-- 🎀 Ribbon Section Divider -->
+        <div class="ribbon"></div>
+
+        <!-- 💌 3D Envelope Animation -->
+        <div class="section letter">
+            <h2>Love Letter 💌</h2>
+            <div class="envelope">
+                <img src="../images/Subject 11.png" alt="Envelope">
+            </div>
+            <p>Use this stickers duayy! 💖</p>
+        </div>
+
+        <!-- 🎀 Ribbon Section Divider -->
+        <div class="ribbon"></div>
+
+        <!-- 💡 FAQ Section -->
+        <div class="section">
+            <h2>Frequently Asked Questions 💡</h2>
+            <div class="faq-item" onclick="toggleFAQ(1)">❓ Why do I love you?</div>
+            <div class="faq-answer" id="faq1">Because you're my happiness 💖</div>
+
+            <div class="faq-item" onclick="toggleFAQ(2)">❓ Who started this story?</div>
+            <div class="faq-answer" id="faq2">Artie eiei 🥰</div>
+
+            <div class="faq-item" onclick="toggleFAQ(3)">❓ What's our dream together?</div>
+            <div class="faq-answer" id="faq3">To always stay happy and explore the world together! 🌍✨</div>
+        </div>
+
+        <!-- 💕 Take the Love Quiz Section -->
+        <div class="quiz-box">
+            <h2>💕 Take the Quiz! </h2>
+            <p>How well do you remember? 🥰</p>
+            <a href="pages/page3.html" class="button quiz-button">💖 Start the Quiz 💖</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(id) {
+            let answer = document.getElementById("faq" + id);
+            answer.classList.toggle("visible");
+        }
+    </script>
+</body>
+</html>

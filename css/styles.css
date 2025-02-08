@@ -1,0 +1,1013 @@
+/* Import Cute Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fef2f2, #fbe6e6); /* Soft pink gradient */
+    color: #5B4636;
+    margin: 0;
+    padding: 0;
+}
+
+/* Decorative Background */
+.decorative-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('images/paper-texture.jpg') repeat center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Main Container */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 250, 245, 0.98); /* Soft pastel beige */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Header Title */
+h1 {
+    font-size: 32px;
+    color: #C97B63; /* Warm soft brown */
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-child(odd) {
+    background: #fde4e4; /* Soft Pink */
+}
+
+.section:nth-child(even) {
+    background: #fff3e6; /* Soft Peach */
+}
+
+/* Polaroid-Style Images */
+.image-frame {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 5px solid #f8d7d7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+}
+
+/* Tape Decoration */
+.tape {
+    width: 100px;
+    height: 30px;
+    background: #f8bfbf;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+/* Cute Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+
+/* FAQ Accordion */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #777;
+}
+
+/* Center the Photobook */
+.photobook-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Flipbook */
+#flipbook {
+    width: 800px;
+    height: 500px;
+    border: 10px solid #ffe6e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Covers */
+.cover {
+    background: #FFB6C1;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Photo Styling */
+.page img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo Captions */
+.page p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #5B4636;
+}
+
+/* Perfectly Positioned Back Button */
+.back-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+/* Flipbook Container */
+#flipbook {
+    width: 700px; /* Make the book slightly smaller */
+    height: 450px;
+    border: 8px solid #ffe6e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Flipbook Styling */
+#flipbook {
+    width: 750px;  /* Slightly bigger for better fit */
+    height: 500px;
+    border: 10px solid #ffe6e6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Flipbook Pages */
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 10px; /* Ensures uniform padding */
+    position: relative;
+    border: 5px solid #ffd9d9; /* Soft pink border like index.html */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Resize and Center Images */
+.page img {
+    width: 90%; /* Fit within page */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 380px; /* Keep height in proportion */
+    border-radius: 15px; /* Soft rounded edges */
+    object-fit: contain; /* Ensures full image visibility */
+}
+
+/* Caption Styling */
+.page p {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 12px;
+    border-radius: 10px;
+    color: #5B4636;
+    font-weight: bold;
+}
+/* Back Button Styling */
+.back-button {
+    display: block;
+    margin: 10px auto 20px; /* Pushes it below the instruction text */
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 200px;
+}
+
+/* Hover Effect */
+.back-button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+/* Center the Instruction Text and Button */
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space before the flipbook */
+}
+
+/* Instruction Text Styling */
+.centered-text p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5B4636;
+    text-align: center;
+    margin-bottom: 10px; /* Space between text and button */
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 200px;
+}
+
+/* Hover Effect */
+.back-button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+/* Quiz Page Styling */
+.quiz-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 250, 245, 0.98);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Question Styling */
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fde4e4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Answer Buttons */
+.answer, .multi-answer {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+}
+
+/* Hover Effect */
+.answer:hover, .multi-answer:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+
+/* Feedback Styling */
+.feedback {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Back Button */
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+}
+
+.back-button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+/* 🌸 Add a Cute Background */
+.decorative-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('images/pink-paper-texture.jpg') repeat center; /* Soft pink background */
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* 🎀 Styling for the Quiz Container */
+.quiz-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 250, 245, 0.98);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px solid #ffb6c1;
+    position: relative;
+}
+
+/* 🥰 Title & Intro */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #C97B63;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-intro {
+    font-size: 18px;
+    color: #5B4636;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Question Styling */
+.question {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fde4e4;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎀 Answer Buttons */
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer, .multi-answer {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    width: 280px;
+    text-align: center;
+}
+
+/* Hover Effect */
+.answer:hover, .multi-answer:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+
+/* 📖 Scrapbook Image Frame */
+.page img {
+    width: 85%;  /* Ensure images fit within the book */
+    max-height: 350px; /* Keep height balanced */
+    object-fit: contain; /* Prevents stretching */
+    border-radius: 10px; /* Soft rounded edges */
+    border: 8px solid #ffffff; /* Clean white frame */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background: rgba(251, 209, 209, 0.95); /* Subtle light background */
+    padding: 8px; /* Adds space inside the frame */
+}
+
+/* 📔 Polaroid-like Style for Pages */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url('images/paper-texture.jpg') no-repeat center; /* Adds a paper-like feel */
+    background-size: cover;
+    padding: 25px;
+    border: 5px solid #FFD9D9; /* Soft pink page border */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* 📎 Clip Style */
+.clip {
+    width: 50px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* ✏️ Caption Styling */
+.page p {
+    font-size: 16px;
+    font-style: italic;
+    color: #5B4636;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Background Color Update */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8F0; /* Change to match the soft beige theme */
+    color: #5B4636;
+    margin: 0;
+    padding: 0;
+}
+/* 🌸 Navigation Bar */
+.navbar {
+    width: 100%;
+    background: rgba(255, 204, 221, 0.9); /* Soft pastel pink */
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    z-index: 1000;
+}
+
+/* 🌸 Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5B4636;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff6699;
+    color: white;
+}
+
+/* 🌸 Responsive Navbar for Small Screens */
+@media (max-width: 600px) {
+    .navbar {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 8px;
+    }
+}
+/* 🌸 General Styling Fix */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌸 Navbar Fix - Remove Extra Borders */
+.navbar {
+    border: none; /* Remove any extra border */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Keep soft shadow */
+}
+
+/* 🌸 Fix for Sections - Remove Borders */
+.section {
+    border: none; /* Remove unnecessary borders */
+    background: rgba(255, 250, 245, 0.98); /* Keep soft background */
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Keep soft effect */
+}
+
+/* 🌸 Remove Unwanted Borders in Images */
+.image-frame img {
+    border: none; /* Remove image borders */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Keep soft shadow */
+}
+
+/* 🌸 Remove Any Double Borders on Buttons */
+.button {
+    border: none; /* Remove any default border */
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3); /* Keep cute soft shadow */
+}
+
+/* 🌸 Fix for "Back to Main" Button */
+.back-button {
+    border: none; /* Remove extra border */
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3); /* Keep clean soft shadow */
+}
+
+/* 🌸 Remove Extra Borders on Flipbook */
+#flipbook {
+    border: none; /* Remove double border effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Keep soft depth */
+}
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fef2f2, #fbe6e6);
+    color: #5B4636;
+    text-align: center;
+}
+
+/* Countdown Container */
+.countdown-box {
+    background: rgba(255, 250, 245, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Title */
+.countdown-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #C97B63;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 15px;
+}
+
+/* Time Sections */
+.time-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Flip Number Styling */
+.time-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6f61;
+    position: relative;
+    width: 90px;
+    text-align: center;
+}
+
+.time-box p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #5B4636;
+}
+
+/* Flip Effect */
+@keyframes flip {
+    0% { transform: rotateX(0deg); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0deg); }
+}
+
+.flip-number {
+    display: block;
+    font-size: 40px;
+    animation: flip 1s ease-in-out infinite;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 80%;
+    height: 10px;
+    background: #ffddd2;
+    border-radius: 10px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff6f61, #ffa07a);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Milestone Message */
+.milestone-message {
+    font-size: 18px;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #FFA07A, #FF6F61);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 200px;
+}
+
+.back-button:hover {
+    background: linear-gradient(to right, #FF6F61, #FFA07A);
+    transform: scale(1.05);
+}
+/* Flip Number Animation */
+@keyframes flip {
+    0% { transform: rotateX(0deg); }
+    50% { transform: rotateX(90deg); opacity: 0.5; }
+    100% { transform: rotateX(0deg); opacity: 1; }
+}
+
+.flip-number {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6f61;
+    animation: flip 1s ease-in-out;
+}
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin-top: 50px; /* ⬅ Increase this value to move it further down */
+}
+body {
+    background: linear-gradient(to bottom, #fef2f2, #fbe6e6); /* Same gradient as before */
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to bottom, #fef2f2, #fbe6e6); /* Same gradient as before */
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 650px;
+
+    /* Center the container vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ensure the page fills the whole viewport */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fde4e4; /* Adjust to match your theme */
+    margin: 0;
+}
+
+/* Ensure the quiz container is centered properly */
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix the buttons alignment and spacing */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between buttons */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure each button fits well */
+.quiz-options button {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #FF7F7F, #FFB6C1);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.quiz-options button:hover {
+    transform: scale(1.05);
+}
+
+/* Fix the main container width */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fde4e4;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Ensure the entire page layout is centered */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fde4e4;
+    margin: 0;
+}
+/* Move the entire main content down slightly */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fde4e4;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 650px;
+    margin: 80px auto; /* Moves the entire content lower */
+}
+
+/* Adjust the quiz container spacing */
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px; /* Increase padding */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure the entire page layout is centered */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fde4e4;
+    margin-top: 50px; /* Moves everything lower */
+}
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #FF6F91, #FF9671);
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(255, 105, 97, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+/* 💡 FAQ Section Styling */
+.faq-item {
+    background: #ffe6eb;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+.faq-item:hover {
+    background: #ffccd5;
+}
+.faq-answer {
+    display: none;
+    padding: 8px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-style: italic;
+}
+.faq-answer.visible {
+    display: block;
+}
+
+/* 📖 Digital Book Image */
+.image-frame {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎀 Quiz Button */
+.quiz-button {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+.quiz-button:hover {
+    transform: scale(1.1);
+}
+/* 🌸 Falling Petals Animation */
+@keyframes fallingPetals {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.falling-petals {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: pink;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fallingPetals 10s linear infinite;
+}
+
+/* 🎀 Ribbon Section Divider */
+.ribbon {
+    width: 100%;
+    height: 12px;
+    background: repeating-linear-gradient(-45deg, #ff7eb3, #ff7eb3 10px, #ffb3c1 10px, #ffb3c1 20px);
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* 📸 Scrapbook Taped Photos */
+.photo-album {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.scrapbook-photo {
+    width: 150px;
+    height: auto;
+    border: 5px solid white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    transform: rotate(-5deg);
+}
+
+
+.envelope {
+    width: 200px;
+    height: px;
+    animation: openEnvelope 1s ease-in-out infinite alternate;
+}
+/* 📩 Ensure the image scales properly */
+.envelope img {
+    width: 90%; /* Keeps proper scaling */
+    height: auto;
+    display: block;
+    transform: translateX(90%);
+}
