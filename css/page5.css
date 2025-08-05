@@ -328,3 +328,98 @@ body {
     box-shadow: 0 4px 10px rgba(255, 105, 97, 0.3);
     transition: all 0.3s ease-in-out;
 }
+.navbar {
+    width: 100%;
+    background: rgba(255, 204, 221, 0.9); /* Soft pastel pink */
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5B4636;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff6699;
+    color: white;
+}
+
+/* 🟪 Navbar Container */
+.navbar {
+    background: #FFD9E6;               /* soft pink background */
+    padding: 0.5rem 1rem;              /* vertical + horizontal padding */
+    border-radius: 2rem;               /* big pill shape */
+    max-width: 100%;                   /* full-width container */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 0 auto 2rem;               /* center & give bottom space */
+  }
+  
+  /* 🔳 Nav List */
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;           /* center items */
+    flex-wrap: wrap;                   /* if screen is narrow, wrap */
+    gap: 1.5rem;                       /* space between buttons */
+  }
+  
+  /* 🔗 Links */
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;                       /* small space between icon & text */
+    text-decoration: none;
+    color: #5B4636;                    /* dark accent color */
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;              /* button padding */
+    border-radius: 1rem;               /* pill-shaped buttons */
+    transition: background 0.25s, transform 0.15s;
+  }
+  
+  /* 🎨 Hover / Active States */
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background: rgba(255,102,153,0.2);
+    transform: translateY(-1px);
+  }
+  
+  /* 📱 Responsive tweak (optional) */
+  @media (max-width: 600px) {
+    .nav-links {
+      gap: 0.8rem;
+    }
+    .nav-links a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }

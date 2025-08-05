@@ -1,0 +1,225 @@
+/* page7.css */
+/* reset */
+* { box-sizing: border-box; margin:0; padding:0; }
+
+/* ✨ Body */
+body {
+  background: #fde4e4;
+  font-family: 'Poppins', sans-serif;
+  color: #5B4636;
+}
+main.timeline-page {
+  padding: 100px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(255, 204, 221, 0.9); /* Soft pastel pink */
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5B4636;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ff6699;
+    color: white;
+}
+
+/* 🖋️ Form */
+.form-section {
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom:40px;
+}
+.form-section h2 {
+  text-align:center;
+  margin-bottom:15px;
+  font-size:24px;
+}
+#momentForm {
+  display:grid;
+  gap:12px;
+}
+#momentForm input[type="date"],
+#momentForm input[type="text"],
+#momentForm textarea,
+#momentForm input[type="file"] {
+  width:100%; padding:10px; border:1px solid #ddd;
+  border-radius:8px; font-size:14px;
+}
+#momentForm button {
+  background: linear-gradient(45deg,#ff758c,#ff7eb3);
+  border:none; color:#fff; padding:12px;
+  font-size:16px; font-weight:600; border-radius:25px;
+  cursor:pointer; transition:0.2s;
+}
+#momentForm button:hover {
+  transform:scale(1.03);
+}
+
+/* 🕰️ Timeline */
+.timeline-section h2 {
+  text-align:center;
+  margin-bottom:20px;
+  font-size:24px;
+}
+.timeline-container {
+  display:flex;
+  overflow-x:auto;
+  gap:16px;
+  padding-bottom:10px;
+}
+.timeline-container::-webkit-scrollbar {
+  height:6px;
+}
+.timeline-container::-webkit-scrollbar-thumb {
+  background:rgba(0,0,0,0.2);
+  border-radius:3px;
+}
+
+/* 📦 Timeline Item */
+.timeline-item {
+  min-width:250px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  overflow:hidden;
+  flex-shrink:0;
+  position:relative;
+}
+.timeline-item img {
+  width:100%; height:150px; object-fit:cover;
+}
+.timeline-item .no-img {
+  width:100%; height:150px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:24px; color:#ccc;
+}
+.timeline-item .info {
+  padding:12px;
+}
+.timeline-item .info h3 {
+  font-size:18px; margin-bottom:4px;
+}
+.timeline-item .info time {
+  display:block; font-size:12px; color:#888;
+  margin-bottom:8px;
+}
+.timeline-item .info p {
+  font-size:14px; line-height:1.4;
+}
+
+/* ⚙️ Actions (Edit/Delete) */
+.timeline-item .actions {
+  display:flex; justify-content:flex-end; gap:8px;
+  padding:0 12px 12px;
+}
+.timeline-item .actions button {
+  background:none; border:none; cursor:pointer; font-size:16px;
+}
+.timeline-item .actions .edit-btn { color:#1e88e5; }
+.timeline-item .actions .delete-btn { color:#e53935; }
+
+/* 📝 Inline Edit Form */
+.edit-form {
+  padding:12px;
+}
+.edit-form input,
+.edit-form textarea {
+  width:100%; margin-bottom:8px;
+  padding:6px; border:1px solid #ddd; border-radius:6px;
+}
+.edit-form .save-btn,
+.edit-form .cancel-btn {
+  padding:6px 12px; border:none; border-radius:6px;
+  color:#fff; margin-right:8px; cursor:pointer;
+}
+.edit-form .save-btn { background:#4caf50; }
+.edit-form .cancel-btn { background:#f44336; }
+
+/* 🟪 Navbar Container */
+.navbar {
+    background: #FFD9E6;               /* soft pink background */
+    padding: 0.5rem 1rem;              /* vertical + horizontal padding */
+    border-radius: 2rem;               /* big pill shape */
+    max-width: 100%;                   /* full-width container */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 0 auto 2rem;               /* center & give bottom space */
+  }
+  
+  /* 🔳 Nav List */
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;           /* center items */
+    flex-wrap: wrap;                   /* if screen is narrow, wrap */
+    gap: 1.5rem;                       /* space between buttons */
+  }
+  
+  /* 🔗 Links */
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;                       /* small space between icon & text */
+    text-decoration: none;
+    color: #5B4636;                    /* dark accent color */
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;              /* button padding */
+    border-radius: 1rem;               /* pill-shaped buttons */
+    transition: background 0.25s, transform 0.15s;
+  }
+  
+  /* 🎨 Hover / Active States */
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background: rgba(255,102,153,0.2);
+    transform: translateY(-1px);
+  }
+  
+  /* 📱 Responsive tweak (optional) */
+  @media (max-width: 600px) {
+    .nav-links {
+      gap: 0.8rem;
+    }
+    .nav-links a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }

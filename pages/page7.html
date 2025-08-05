@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📜 Story Timeline</title>
+  <link rel="stylesheet" href="../css/page7.css">
+</head>
+<body>
+  <!-- 🌸 Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li><a href="page2.html">📖 Photobook</a></li>
+      <li><a href="page3.html">💡 Quiz</a></li>
+      <li><a href="page4.html">⏳ Our Days Together</a></li>
+      <li><a href="page5.html">🎵 Songs</a></li>
+      <li><a href="page6.html">💌 Love Letter</a></li>
+      <li><a href="page7.html" class="active">📜 Story Timeline</a></li>
+    </ul>
+  </nav>
+
+  <main class="timeline-page">
+    <!-- ✨ Add Your Moment Form -->
+    <section class="form-section">
+      <h2>✨ Add Your Moment</h2>
+      <form id="momentForm">
+        <input type="date" id="mDate" required>
+        <input type="text" id="mTitle" placeholder="Title" required>
+        <textarea id="mDesc" placeholder="Description" rows="3"></textarea>
+        <input type="file" id="mImage" acปcept="image/*">
+        <button type="submit">Add to Timeline</button>
+      </form>
+    </section>
+
+    <!-- 🕰️ Timeline Output -->
+    <section class="timeline-section">
+      <h2>🕰️ Timeline of Us</h2>
+      <div id="timeline" class="timeline-container">
+        <!-- JS injects .timeline-item cards here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/page7.js" defer></script>
+</body>
+</html>

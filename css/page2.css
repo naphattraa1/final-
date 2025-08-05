@@ -162,3 +162,93 @@ body {
     background: linear-gradient(to right, #FFA07A, #FF6F61);
     transform: scale(1.05); /* Soft pop effect */
 }
+/* 🟪 Navbar Container */
+.navbar {
+    background: #FFD9E6;               /* soft pink background */
+    padding: 0.5rem 1rem;              /* vertical + horizontal padding */
+    border-radius: 2rem;               /* big pill shape */
+    max-width: 100%;                   /* full-width container */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 0 auto 2rem;               /* center & give bottom space */
+  }
+  
+  /* 🔳 Nav List */
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;           /* center items */
+    flex-wrap: wrap;                   /* if screen is narrow, wrap */
+    gap: 1.5rem;                       /* space between buttons */
+  }
+  
+  /* 🔗 Links */
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;                       /* small space between icon & text */
+    text-decoration: none;
+    color: #5B4636;                    /* dark accent color */
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;              /* button padding */
+    border-radius: 1rem;               /* pill-shaped buttons */
+    transition: background 0.25s, transform 0.15s;
+  }
+  
+  /* 🎨 Hover / Active States */
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background: rgba(255,102,153,0.2);
+    transform: translateY(-1px);
+  }
+  
+  /* 📱 Responsive tweak (optional) */
+  @media (max-width: 600px) {
+    .nav-links {
+      gap: 0.8rem;
+    }
+    .nav-links a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* 📚 Gallery grid */
+.book-selector {
+    margin: 100px auto 2rem;
+    text-align: center;
+  }
+  .book-selector .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .book-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .book-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .book-card h3 {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #5B4636;
+  }
+  .book-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* hide by [hidden] attribute (flipbook starts hidden) */
+  [hidden] { display: none !important; }
+  
+  /* …then your existing photobook + nav styles… */

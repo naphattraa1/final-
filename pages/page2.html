@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Love Story Photobook 📖</title>
-    <link rel="stylesheet" href="../css/page2.css">
-    <script src="../js/page2.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Love Story 📖</title>
+  <link rel="stylesheet" href="../css/page2.css" />
+  <script src="../js/page2.js" defer></script>
 </head>
 <body>
 
-    <!-- 🌸 Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="../index.html">🏠 Home</a></li>
-            <li><a href="page2.html">📖 Photobook</a></li>
-            <li><a href="page3.html">💡 Quiz</a></li>
-            <li><a href="page4.html">⏳ Our Days Together</a></li>
-            <li><a href="page5.html">🎵 Songs</a></li>
-            <li><a href="page6.html">💌 Love Letter</a></li>  
-        </ul>
-    </nav>
+  <!-- 🌸 Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li><a href="page2.html" class="active">📚 Photobook</a></li>
+      <li><a href="page3.html">💡 Quiz</a></li>
+      <li><a href="page4.html">⏳ Our Days Together</a></li>
+      <li><a href="page5.html">🎵 Songs</a></li>
+      <li><a href="page6.html">💌 Love Letter</a></li>
+      <li><a href="page7.html">📜 Story Timeline</a></li>
+    </ul>
+  </nav>
 
-    <div class="photobook-container">
-        <h1>Our Love Story 📖💕</h1>
+  
 
-        <!-- 📖 Flipbook Container -->
-        <div id="flipbook">
-            <div class="page cover">
-                <img src="../images/1.png" class="image-frame">
-            </div>
+ 
+  <!-- 🔖 1) Book Selector -->
+  <section class="book-selector" id="gallery">
+    <h2>📚 Pick a Photobook</h2>
+    <div class="books">
+      <div class="book-card" data-key="valentines">
+        <img src="../images/1.png" alt="Valentine’s Edition" />
+        <h3>Valentine’s Edition</h3>
+      </div>
+      <div class="book-card" data-key="story">
+        <img src="../images/24.png" alt="Our Story" />
+        <h3>Artie's Birthday</h3>
+      </div>
+      
+       <!-- 🔙 Back to Main Button (instead of nav) -->
+    </div>
+  <div class="back-button-container">
+    <a href="../index.html" class="back-button">⬅ Back to Main</a>
+  </div>
+      <!-- add more .book-card as you like -->
+    </div>
+  </section>
 
-            <!-- 📖 Page Navigation Buttons -->
-            <button id="prevPage" class="nav-button left" style="display: none;">⬅ Previous</button>
-            <button id="nextPage" class="nav-button right">Next ➡</button>
-        </div>
+  <!-- 🔖 2) Flipbook (start hidden) -->
+  <section class="photobook-container" id="photobook" hidden>
+    <h2 id="bookTitle"> </h2>
+    <div id="flipbook">
+      <div class="page cover">
+        <img src="" alt="Page image" />
+      </div>
+      <button id="prevPage" class="nav-button left">⬅ Previous</button>
+      <button id="nextPage" class="nav-button right">Next ➡</button>
+    </div>
+    <div class="back-button-container">
+      <button id="backToGallery" class="back-button">← Back to Gallery</button>
     </div>
 
-    <!-- 🔙 "Back to Main" Button -->
-    <a href="../index.html" class="button back-button">⬅ Back to Main</a>
+  </section>
 </body>
 </html>

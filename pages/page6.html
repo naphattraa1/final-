@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Letters 💌</title>
-    <link rel="stylesheet" href="../css/page6.css">
-    <script src="../js/page6.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letters 💌</title>
+  <link rel="stylesheet" href="../css/page6.css">
+  <script src="../js/page6.js" defer></script>
 </head>
 <body>
 
-    <!-- 🌸 Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="../index.html">🏠 Home</a></li>
-            <li><a href="page2.html">📖 Photobook</a></li>
-            <li><a href="page3.html">💡 Quiz</a></li>
-            <li><a href="page4.html">⏳ Our Days Together</a></li>
-            <li><a href="page5.html">🎵 Songs</a></li>
-            <li><a href="page6.html">💌 Love Letter</a></li>  
-        </ul>
-    </nav>
+  <!-- 🌸 Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li><a href="page2.html">📖 Photobook</a></li>
+      <li><a href="page3.html">💡 Quiz</a></li>
+      <li><a href="page4.html">⏳ Our Days Together</a></li>
+      <li><a href="page5.html">🎵 Songs</a></li>
+      <li><a href="page6.html">💌 Love Letter</a></li>
+      <li><a href="page7.html">📜 Story Timeline</a></li>
+    </ul>
+  </nav>
+    
+    </body>
+ <!-- 📅 Upcoming Letters (populated by JS) -->
+<div class="section-box" id="upcoming">
+    <h2>📅 Upcoming Letters</h2>
+    <!-- JS will inject <p>…</p> here -->
+  </div>
 
-    <!-- 📅 Upcoming Letters -->
-    <div class="section-box">
-        <h2>📅 Upcoming Letters</h2>
-        <p>2025-02-14</p>
-        <p>2025-08-09</p>
+  <!-- 💌 Letters Through Time -->
+  <div class="section-box">
+    <h2>💌 Letters Through Time</h2>
+    <div class="letter-box">
+
+      <!-- Valentine's Day -->
+      <div class="letter-card locked" id="valentineBox" data-target="valentineLetter">
+        💕 Valentine’s Day Letter
+        <p id="valentineUnlock"></p>
+      </div>
+
+      <!-- Birthday -->
+      <div class="letter-card locked" id="birthdayBox" data-target="birthdayLetter">
+        🎂 Birthday Surprise
+        <p id="birthdayUnlock"></p>
+      </div>
+
+      <!-- Christmas -->
+      <div class="letter-card locked" id="christmasBox" data-target="christmasLetter">
+        🎄 Christmas Day Letter
+        <p id="christmasUnlock"></p>
+      </div>
+
+      <!-- New Year -->
+      <div class="letter-card locked" id="newYearBox" data-target="newYearLetter">
+        🎉 New Year Letter
+        <p id="newYearUnlock"></p>
+      </div>
+
+      <!-- Anniversary -->
+      <div class="letter-card locked" id="anniversaryBox" data-target="anniversaryLetter">
+        💍 Anniversary Letter
+        <p id="anniversaryUnlock"></p>
+      </div>
+
+      <!-- Surprise -->
+      <div class="letter-card" id="surpriseBox" data-target="surpriseLetter">
+        🎁 Surprise Letter
+        <p>🎀 Click to Reveal 🎀</p>
+      </div>
+
     </div>
+  </div>
 
-    <!-- 💌 Letters Through Time -->
-    <div class="section-box">
-        <h2>💌 Letters Through Time</h2>
-        <div class="letter-box">
-            <!-- Valentine's Letter -->
-            <div class="letter-card click-reveal locked" id="valentineBox" data-target="valentineLetter">
-                💕 Valentine's Day Letter
-                <p id="valentineUnlock">Unlocks in: 7 Days</p>
-            </div>
+  <!-- 📜 Hidden Letters Content -->
+  <div id="valentineLetter" class="hidden reveal-message">
+    💌 “On this special day of love, I want you to know just how deeply I cherish you. You are my favorite part of every day. Happy Valentine’s Day, Artie. 💖✨” 💖
+  </div>
 
-            <!-- Birthday Surprise -->
-            <div class="letter-card click-reveal locked" id="birthdayBox" data-target="birthdayLetter">
-                🎂 Birthday Surprise
-                <p id="birthdayUnlock">Unlocks in: 183 Days</p>
-            </div>
+  <div id="birthdayLetter" class="hidden reveal-message">
+    🎉 “Happy Birthday ,I hope I could be the present you truly cherish on your birthday this year. Thank you for being someone so special in my life. I wish you endless happiness and warmth, and I hope you always feel how deeply I care for you. No matter what happens, I’ve always been by your side — quietly cheering you on in your brightest moments and holding space for you during your hardest days. Just know that whenever you turn around, I’ll be right here. Love you the most my Teeruk ” 🎊
+  </div>
 
-            <!-- Surprise Letter -->
-            <div class="letter-card click-reveal" id="surpriseBox" data-target="surpriseLetter">
-                🎁 Surprise Letter
-                <p>🎀 Click to Reveal 🎀</p>
-            </div>
-        </div>
-    </div>
+  <div id="christmasLetter" class="hidden reveal-message">
+    🎄 “Merry Christmas, Mom! May every carol and every light fill your heart with joy…”
+  </div>
 
-    <!-- 📜 Hidden Letters Content -->
-    <div id="valentineLetter" class="hidden reveal-message">💌 “On this special day of love, I want you to know just how deeply I cherish you. You are my favorite part of every day. Happy Valentine’s Day, Artie. 💖✨” 💖</div>
-    <div id="birthdayLetter" class="hidden reveal-message">🎉 “A year older, a year wiser, and another beautiful milestone in our journey together. On this special day, I want to remind you how much love and journey you bring into my life. Happy Birthday, Artie! 🎉💕” 🎊</div>
-    <div id="surpriseLetter" class="hidden reveal-message">✨ Life is full of unexpected surprises, but my favorite one has been you. Every day, I discover new reasons to love you even more 💌🌟 ✨</div>
+  <div id="newYearLetter" class="hidden reveal-message">
+    🎉 “Happy New Year! Here’s to 365 new chances to make you smile…”
+  </div>
 
-    <!-- 🔙 Go Back Button -->
-    <a href="../index.html" id="goBackButton">⬅ Go Back</a>
+  <div id="anniversaryLetter" class="hidden reveal-message">
+    💍 “Happy Anniversary! Another year of memories, laughter, and love by your side…”
+  </div>
+
+  <div id="surpriseLetter" class="hidden reveal-message">
+    ✨ Life is full of unexpected surprises, but my favorite one has been you. Every day, I discover new reasons to love you even more 💌🌟
+  </div>
+
+  <!-- 🔙 Go Back Button -->
+  <a href="../index.html" class="button back-button">⬅ Go Back</a>
 
 </body>
 </html>
