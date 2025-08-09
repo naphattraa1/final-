@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded",function(){
             "../images/28.png",
             "../images/32.png",
             "../images/qr.png",
+            "../images/qr.png",
             "../images/31.png"
         ]
       },
