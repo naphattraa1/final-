@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love Letters 💌</title>
   <link rel="stylesheet" href="../css/page6.css">
+  <!-- JS หน้านี้ -->
   <script src="../js/page6.js" defer></script>
 </head>
 <body>
@@ -21,81 +22,67 @@
       <li><a href="page7.html">📜 Story Timeline</a></li>
     </ul>
   </nav>
-    
-    </body>
- <!-- 📅 Upcoming Letters (populated by JS) -->
-<div class="section-box" id="upcoming">
-    <h2>📅 Upcoming Letters</h2>
-    <!-- JS will inject <p>…</p> here -->
-  </div>
 
   <!-- 💌 Letters Through Time -->
   <div class="section-box">
     <h2>💌 Letters Through Time</h2>
+    <p class="section-subtitle">All letters are now available — open any time you like ✨</p>
+
     <div class="letter-box">
 
-      <!-- Valentine's Day -->
-      <div class="letter-card locked" id="valentineBox" data-target="valentineLetter">
+      <!-- Valentine's Day (available now) -->
+      <div class="letter-card" id="valentineBox" data-target="valentineLetter">
         💕 Valentine’s Day Letter
-        <p id="valentineUnlock"></p>
+        <p>💝 Available Now! Click to Open</p>
       </div>
 
-      <!-- Birthday -->
-      <div class="letter-card locked" id="birthdayBox" data-target="birthdayLetter">
+      <!-- Birthday (available now) -->
+      <div class="letter-card" id="birthdayBox" data-target="birthdayLetter">
         🎂 Birthday Surprise
-        <p id="birthdayUnlock"></p>
+        <p>💝 Available Now! Click to Open</p>
       </div>
 
-      <!-- Christmas -->
-      <div class="letter-card locked" id="christmasBox" data-target="christmasLetter">
-        🎄 Christmas Day Letter
-        <p id="christmasUnlock"></p>
-      </div>
-
-      <!-- New Year -->
-      <div class="letter-card locked" id="newYearBox" data-target="newYearLetter">
-        🎉 New Year Letter
-        <p id="newYearUnlock"></p>
-      </div>
-
-      <!-- Anniversary -->
-      <div class="letter-card locked" id="anniversaryBox" data-target="anniversaryLetter">
-        💍 Anniversary Letter
-        <p id="anniversaryUnlock"></p>
-      </div>
-
-      <!-- Surprise -->
+      <!-- Surprise (available) -->
       <div class="letter-card" id="surpriseBox" data-target="surpriseLetter">
         🎁 Surprise Letter
         <p>🎀 Click to Reveal 🎀</p>
       </div>
 
+      <!-- 🩷 My Last Letter (ใหม่ เปิดได้เลย) -->
+      <div class="letter-card" id="lastLetterBox" data-target="lastLetter">
+        💌 My Last Letter
+        <p>🤍 Click to read 🤍</p>
+      </div>
+
     </div>
   </div>
 
-  <!-- 📜 Hidden Letters Content -->
-  <div id="valentineLetter" class="hidden reveal-message">
-    💌 “On this special day of love, I want you to know just how deeply I cherish you. You are my favorite part of every day. Happy Valentine’s Day, Artie. 💖✨” 💖
+  <!-- 📜 Letters Content (ซ่อนอยู่, กดการ์ดถึงจะโชว์) -->
+  <div id="valentineLetter" class="reveal-message">
+    💌 “On this special day of love, I want you to know just how deeply I cherish you.
+    You are my favorite part of every day. Happy Valentine’s Day, Artie. 💖✨” 💖
   </div>
 
-  <div id="birthdayLetter" class="hidden reveal-message">
-    🎉 “Happy Birthday ,I hope I could be the present you truly cherish on your birthday this year. Thank you for being someone so special in my life. I wish you endless happiness and warmth, and I hope you always feel how deeply I care for you. No matter what happens, I’ve always been by your side — quietly cheering you on in your brightest moments and holding space for you during your hardest days. Just know that whenever you turn around, I’ll be right here. Love you the most my Teeruk ” 🎊
+  <div id="birthdayLetter" class="reveal-message">
+    🎉 “Happy Birthday ,I hope I could be the present you truly cherish on your birthday this year.
+    Thank you for being someone so special in my life. I wish you endless happiness and warmth,
+    and I hope you always feel how deeply I care for you. No matter what happens, I’ve always been
+    by your side — quietly cheering you on in your brightest moments and holding space for you
+    during your hardest days. Just know that whenever you turn around, I’ll be right here.
+    Love you the most my Teeruk ” 🎊
   </div>
 
-  <div id="christmasLetter" class="hidden reveal-message">
-    🎄 “Merry Christmas, Mom! May every carol and every light fill your heart with joy…”
+  <div id="surpriseLetter" class="reveal-message">
+    ✨ Life is full of unexpected surprises, but my favorite one has been you.
+    Every day, I discover new reasons to love you even more 💌🌟
   </div>
 
-  <div id="newYearLetter" class="hidden reveal-message">
-    🎉 “Happy New Year! Here’s to 365 new chances to make you smile…”
-  </div>
+  <!-- 🩷 My Last Letter Content -->
+  <div id="lastLetter" class="reveal-message">
 
-  <div id="anniversaryLetter" class="hidden reveal-message">
-    💍 “Happy Anniversary! Another year of memories, laughter, and love by your side…”
-  </div>
+    🤍 “ข้อความสุดท้ายเเล้ว โหยวไม่เเน่ใจเลยว่าอ้าตจะได้อ่านมันมั้ยโหยวเขียนตอนที่เราเลิกกันได้สักพักแล้วสิ่งที่อยากจะบอกต่อจากนี้มาจากใจจิงนะคะ โหยวขอบคุณที่อ้าตผ่านเข้ามาในชีวิตได้ใช้เวลาร่วมกันเป็นความทรงจำที่ดีมากจริงๆโหยวสนุกมากและมีความสุขกับทุกช่วงเวลาที่อยู่กับยูขอบคุณที่เข้ามาสอนอะไรมากมายทำให้รู้จักรักในอีกรูปแบบนึงที่ไม่เคยรู้จักมาก่อน และขอโทษจากใจจริงๆถ้าที่ผ่านมาความรักหรือแม้แต่ความพยายามของโหยวทำร้ายอ้าตลงไป โหยวหวังดีและยังคงเป็นห่วงอ้าตอยู่เสมอถึงอ้าตจะไม่ได้อ่านข้อความนี้ก็ไม่เป็นไรเลยมันเเค่ติดอยุ่ในใจเพราะตอนที่เราเลิกกันตอนนั้นโหยวพูดอะไรไม่ออกเลยพูดไม่หมดความรู้สึกมันเยอะไปหมด โหยวขอให้อ้าตเจอคนที่เขาอดทน รับฟัง ใส่ใจ เข้าใจความเป็นอ้าตทั้งหมด พยยเพื่ออ้าตบ้าง เเละคงดีมากๆถ้าเขาทำได้ดีกว่าโหยว ขอให้เขาเกาหลังสบาย เกามือจนอ้าตหลับไป ทำข้าวอร่อย พกยาแก้ไมเกรนหรือสเปรย์พ่นจมูกให้อ้าตจะดีมากๆ อ้าตขี้หนาวมากๆหวังว่าเขาจะมีผ้าห่มติดรถ ปลอบอ้าตได้ในตอนที่อ้าตต้องการใครสักคน หวังว่าเขาจะรักอ้าตได้มากกว่าที่โหยวรัก แต่โหยวไม่ห่วงหรอกอ้าตเก่งจะตายยูคงเลือกคนคนนั้นได้ดีใช่มั้ย สุดท้ายเเล้ว ที่ผ่านมาโหยวตั้งใจรักยูมากจิงๆที่ยูสงสัยว่าโหยวรักอะไร โหยวแค่ค่อยๆรักยูไปทุกวันไม่เกี่ยวเลยว่าเพราะดูแลดีหรืออะไร โหยวแค่รักทั้งหมดเพราะงั้นอย่าสงสัยในความรักของโหยวเลยโหยวให้ยูทั้งหมดเท่าที่ตัวเองจะรักใครสักคนได้เเล้วจิงๆ  ของขวัญชิ้นสุดท้ายที่จะให้ได้โหยวได้ให้ยูไปแล้ว หวังว่าจะชอบอิสระที่มอบให้ คงไม่ได้อยุ่ข้างๆอีกต่อไปแล้วเเต่โหยวจะเฝ้ามองยูมีความสุขเสมอนะคะ โหยวมาบอกลาในฐานะคนรักอาจจะช้าไปหน่อยเเต่อย่างน้อยก้ได้พิมบอก บ้ายบายนะคะที่รัก   .” 🤍
 
-  <div id="surpriseLetter" class="hidden reveal-message">
-    ✨ Life is full of unexpected surprises, but my favorite one has been you. Every day, I discover new reasons to love you even more 💌🌟
+    <!-- ตรงนี้แก้ข้อความเป็นเวอร์ชันจริงของน้องได้เลยนะคะ -->
   </div>
 
   <!-- 🔙 Go Back Button -->
